@@ -1,0 +1,8 @@
+db_path: 'building_occupancy.db'
+video_path: '/path/to/your/video.mp4'
+cascade_path: 'haarcascade_fullbody.xml'
+center_threshold: 350
+debounce_time: 2.0
+tolerance: 0.6
+max_distance: 40
+max_hash_diff: 10
