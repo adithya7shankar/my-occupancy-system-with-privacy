@@ -35,27 +35,23 @@ This project is a facial recognition and occupancy tracking system designed to m
 ##Installation
 Clone the Repository:
 ```bash
-Copy code
 git clone https://github.com/adithya7shankar/your-repo-name.git
 cd your-repo-name
 ```
 Install Dependencies:
 ```bash
-Copy code
 pip install -r requirements.txt
 ```
 Set Up the Database:
 Run the database setup script to create the necessary tables:
 
 ```bash
-Copy code
 python database_setup.py
 ```
 ##Usage
 To start the system, run the main script:
 
 ```bash
-Copy code
 python main.py
 ```
 The system will begin monitoring the space, detecting faces, and tracking occupancy.
@@ -69,13 +65,11 @@ The project includes a Dockerfile for containerization. To build and run the Doc
 Build the Docker Image:
 
 ```bash
-Copy code
 docker build -t occupancy-tracking .
 ```
 Run the Docker Container:
 
 ```bash
-Copy code
 docker run -d -p 8080:8080 occupancy-tracking
 ```
 ##Development in a Dev Container
