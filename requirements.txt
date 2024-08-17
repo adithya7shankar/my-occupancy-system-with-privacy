@@ -1,5 +1,10 @@
 opencv-python-headless
 face_recognition
 numpy
-imagehas
+imagehash
 Pillow
+pyyaml
+tensorflow 
+keras 
+opencv-python 
+scikit-learn
