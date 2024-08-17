@@ -1,6 +1,33 @@
 # Facial Recognition and Occupancy Tracking System
 
-This project is a facial recognition and occupancy tracking system designed to monitor and track the occupancy of a building or space by detecting faces and using clothing as a signature when faces are not detected.
+
+
+### 1. Introduction
+The goal of this project is to develop an occupancy tracking system that accurately logs the entry and exit of individuals within a monitored area. The system employs a combination of facial recognition and clothing-based identification to enhance reliability, particularly in scenarios where facial recognition alone may not suffice due to occlusions or camera angle limitations.
+
+### 2. Problem Statement
+Traditional occupancy tracking systems primarily rely on facial recognition to identify and track individuals. However, in environments where people's faces may be obscured or when multiple people share similar facial features, the accuracy of these systems can be compromised. The challenge addressed in this project is to augment facial recognition with a secondary method—clothing-based identification—allowing the system to maintain accurate tracking even when faces are not visible.
+
+### 3. Objectives
+Primary Objective: Develop a system that logs the entry and exit of individuals based on facial recognition.
+Secondary Objective: Implement a fallback method using clothing-based identification to recognize individuals when faces are not visible.
+Tertiary Objective: Integrate both recognition methods into a robust occupancy tracking system that logs real-time data into a database.
+### 4. Methodology
+The project involves several stages, each focusing on key components of the overall system:
+
+#### 4.1 Facial Recognition
+Library Used: face_recognition
+Functionality: The system uses the face_recognition library to detect and encode facial features from camera feeds. Each individual's face encoding is stored and compared with previously detected faces to determine if the individual is entering or exiting the area.
+#### 4.2 Clothing-Based Identification
+Model Used: Pre-trained MobileNetV2 model from TensorFlow/Keras
+Feature Extraction: The system uses MobileNetV2 to extract features from the clothing of detected individuals. These features are then used to create a unique "signature" for each person.
+Comparison Method: The clothing signatures are compared using cosine similarity. If a match is found within a predefined threshold, the system recognizes the individual based on their clothing.
+#### 4.3 Integration
+Database Management: SQLite is used to store occupancy data, including signatures, entry times, and exit times.
+Processing Pipeline: The system processes video frames, first attempting facial recognition. If no face is detected, it falls back to clothing-based recognition. The occupancy status is updated in the database based on the results.
+### 5. Implementation Details
+- **Programming Language**: Python
+- **Libraries**: face_recognition, TensorFlow, Keras, OpenCV, SQLite, scikit-learn, imagehash.
 
 ## Table of Contents
 - [Features](#Features)
