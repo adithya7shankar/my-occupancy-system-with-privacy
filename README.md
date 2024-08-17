@@ -3,15 +3,15 @@
 This project is a facial recognition and occupancy tracking system designed to monitor and track the occupancy of a building or space by detecting faces and using clothing as a signature when faces are not detected.
 
 ## Table of Contents
-- [Features](#features)
+- [Features](#Features)
 - [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [Docker Containerization](#docker-containerization)
-- [Development in a Dev Container](#development-in-a-dev-container)
-- [Contributing](#contributing)
-- [License](#license)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Configuration](#Configuration)
+- [Docker Containerization](#Docker-containerization)
+- [Development in a Dev Container](#Development-in-a-dev-container)
+- [Contributing](#Contributing)
+- [License](#License)
 
 ## Features
 - **Facial Recognition**: Uses machine learning models to detect faces.
